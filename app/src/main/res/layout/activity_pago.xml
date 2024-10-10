@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE499"
+    android:orientation="vertical"
+    tools:context=".pagoActivity">
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Club Deportivo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="34dp"/>
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pago"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="122dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- ID Cliente -->
+        <EditText
+            android:id="@+id/IdCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="ID Cliente"
+            android:inputType="number" />
+
+        <!-- Tipo de Cliente -->
+        <TextView
+            android:id="@+id/TipoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Tipo de Cliente"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:entries="@array/tipo_cliente_array" />
+
+        <!-- Tipo de Cuota -->
+        <TextView
+            android:id="@+id/tvTipoCuotaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Tipo de Cuota"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoCuota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:entries="@array/tipo_cuota_array" />
+
+        <!-- Forma de Pago -->
+        <TextView
+            android:id="@+id/tvFormaPagoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Forma de Pago"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linearFormaPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbEfectivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo" />
+
+            <CheckBox
+                android:id="@+id/cbTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Tarjeta" />
+
+        </LinearLayout>
+        <!-- Importe Total -->
+        <EditText
+            android:id="@+id/monto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Importe Total"
+            android:inputType="numberDecimal" />
+
+        <!-- Botón para Realizar el Pago -->
+        <Button
+            android:id="@+id/btnPago"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:text="Realizar Pago" />
+    </LinearLayout>
+
+
+</LinearLayout>

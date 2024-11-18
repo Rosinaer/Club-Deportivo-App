@@ -230,7 +230,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
         try {
           //  val cursor = db.rawQuery(query, arrayOf("fechaHoy"))
-          val cursor = db.rawQuery(query, arrayOf("2024-12-10"))
+            val cursor = db.rawQuery(query, arrayOf("2024-12-10"))
             if (cursor.moveToFirst()) {
                 var count = 0
                 do {

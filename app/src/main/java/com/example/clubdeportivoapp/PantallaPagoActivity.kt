@@ -31,8 +31,8 @@ class PantallaPagoActivity : AppCompatActivity() {
         val btnPagar =findViewById<Button>(R.id.btnPagar)
         val btnComprobante = findViewById<Button>(R.id.btnComprobante)
         val btnVolver = findViewById<Button>(btnVolver)
-        val cbSocio = findViewById<RadioButton>(R.id.cbSocio)
-        val cbNoSocio = findViewById<RadioButton>(R.id.cbNoSocio)
+        //val cbSocio = findViewById<RadioButton>(R.id.cbSocio)
+        //val cbNoSocio = findViewById<RadioButton>(R.id.cbNoSocio)
 
 
         btnPagar.setOnClickListener{
@@ -51,16 +51,16 @@ class PantallaPagoActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             var tipoCliente = ""
-            if(cbSocio.isChecked){
-                tipoCliente = "Socio"
-                fechaVencimiento = fechaPago.plusMonths(1)
-                Toast.makeText(this,"Opcion: Socio", Toast.LENGTH_LONG).show()
-            } else if(cbNoSocio.isChecked){
-                tipoCliente = "NoSocio"
-                Toast.makeText(this,"Opcion: NoSocio", Toast.LENGTH_LONG).show()
-            } else {
-                Toast.makeText(this,"Selecciona por favor una opcion", Toast.LENGTH_LONG).show()
-            }
+//            if(cbSocio.isChecked){
+//                tipoCliente = "Socio"
+//                fechaVencimiento = fechaPago.plusMonths(1)
+//                Toast.makeText(this,"Opcion: Socio", Toast.LENGTH_LONG).show()
+//            } else if(cbNoSocio.isChecked){
+//                tipoCliente = "NoSocio"
+//                Toast.makeText(this,"Opcion: NoSocio", Toast.LENGTH_LONG).show()
+//            } else {
+//                Toast.makeText(this,"Selecciona por favor una opcion", Toast.LENGTH_LONG).show()
+//            }
 
             var metodoPago = " "
             if(rbEfectivo.isChecked){

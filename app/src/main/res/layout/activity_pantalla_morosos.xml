@@ -96,12 +96,12 @@
             android:layout_margin="10dp"
             android:text="Volver" />
 
-        <Button
-            android:id="@+id/btnImprimir"
-            android:layout_width="110dp"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
-            android:text="PDF" />
+<!--        <Button-->
+<!--            android:id="@+id/btnImprimir"-->
+<!--            android:layout_width="110dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="PDF" />-->
 
 
     </LinearLayout>

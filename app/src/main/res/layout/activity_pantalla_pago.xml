@@ -24,26 +24,36 @@
 
     <!-- Subtítulo -->
     <!-- Formulario -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="Pago"
-        android:textSize="25sp"
-        android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="613dp"
-        android:layout_marginBottom="122dp"
-        android:background="#f8e9b1"
-        android:gravity="center"
-        android:orientation="vertical">
 
-        <!-- ID Cliente -->
-        <!-- Tipo de Cliente -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Pago"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-        <EditText
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="613dp"
+            android:layout_marginBottom="122dp"
+            android:background="#f8e9b1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- ID Cliente -->
+            <TextView
+            android:layout_width="235dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="ID Cliente"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+
+            <EditText
             android:id="@+id/txtIdCliente"
             android:layout_width="110dp"
             android:layout_height="48dp"

@@ -270,6 +270,10 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
     """
         return db.rawQuery(query, arrayOf(dni))
     }
+
+
+
+
 }
 
 

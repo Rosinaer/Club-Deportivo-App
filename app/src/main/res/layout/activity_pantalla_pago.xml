@@ -52,7 +52,6 @@
             android:textStyle="bold"/>
 
 
-
             <EditText
             android:id="@+id/txtIdCliente"
             android:layout_width="110dp"
@@ -61,6 +60,23 @@
             android:hint="idCliente"
             android:inputType="text"
             android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="235dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="Tipo Cliente"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/txtTipoCliente"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:hint="Tipo Cliente"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="20sp" />-->
 
 <!--        <TextView-->
 <!--            android:id="@+id/txtTipoCliente"-->
@@ -77,27 +93,27 @@
             android:layout_marginBottom="12dp"
             android:gravity="center"
             android:orientation="horizontal">
-<!--            <RadioGroup-->
-<!--                android:id="@+id/rgOptCliente"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@color/white"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
+            <RadioGroup
+                android:id="@+id/rgOptCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-<!--            <RadioButton-->
-<!--                android:id="@+id/cbSocio"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Socio" />-->
+            <RadioButton
+                android:id="@+id/cbSocio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socio" />
 
-<!--            <RadioButton-->
-<!--                android:id="@+id/cbNoSocio"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="16dp"-->
-<!--                android:text="No Socio" />-->
-<!--            </RadioGroup>-->
+                <RadioButton
+                    android:id="@+id/cbNoSocio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="No Socio" />
+            </RadioGroup>
 
         </LinearLayout>
 

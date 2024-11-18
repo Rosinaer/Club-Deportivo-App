@@ -44,5 +44,6 @@ class PantallaPrincipal : AppCompatActivity() {
             val intent = Intent(this, PantallaMorosos::class.java)
             startActivity(intent)
         }
+
     }
 }

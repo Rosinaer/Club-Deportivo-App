@@ -34,6 +34,7 @@ class PantallaInscripciones : AppCompatActivity() {
         val rbNoSocio = findViewById<RadioButton>(R.id.rbNoSocio)
 
 
+
         btnIngresar.setOnClickListener {
             val nombre = txtNombre.text.toString()
             val apellido = txtApellido.text.toString()
@@ -75,6 +76,8 @@ class PantallaInscripciones : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Error al registrar el socio", Toast.LENGTH_SHORT).show()
             }
+
+
 
         }
             btnVolver.setOnClickListener {
